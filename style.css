@@ -1,0 +1,132 @@
+*{
+    margin = 0;
+    padding = 0;
+    font-family: 'poppins',sans-serif,"Courier New";
+    box-sizing: border-box;
+  }
+  
+  .container{
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(135deg,#56CCF2,#203A43);
+    padding:10px;
+  }
+  
+  .todo-app{
+    width: 100%;
+    max-width: 350px;
+    min-height:280px;
+    height: auto;
+    max-height: 800px;
+    background: white;
+    margin: 100px auto 20px;
+    padding: 20px;
+    border-radius: 13px;
+    
+  }
+  .todo-app h2{
+    margin:10px 0px 10px 75px;
+    display:flex;
+    align-items:center;
+  }
+  .todo-app img{
+    margin:0px 0px 0px 15px;
+    padding:5px;
+    width:50px;
+    height:50px;
+  }
+  .Input{
+    height: 30px;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    background: #F0F0F0;
+    padding-left: 20px;
+    border-radius: 20px; 
+    color: #FFFFFF;
+  }
+  input{
+    
+    width:290px;
+    min-height: 30px;
+    font-size:13px;
+    height:auto;
+    border:none;
+    outline:none;
+    background: transparent;
+  }
+  button{
+    font-size:13px;
+  
+    min-height: 30px;
+    width: 60px;
+    border:none;
+    outline:none;
+    padding: 16px, 50px;
+    background:#FF2400;
+    color:#ffffff;
+    cursor:pointer;
+    border-radius: 20px;
+  }
+  .list-con{
+    margin-top:45px;
+    height:auto;
+    color: #0F0F0F;
+    
+    
+  }
+  ul li{
+    font-family: "Monaco";
+    list-style: none;
+    padding: 10px 2px 5px;
+    position:relative;
+    cursor:pointer;
+    font-size:12px;
+    
+    
+  }
+  ul li::before{
+    margin-left: 0px;
+    content: "";
+    position: absolute;
+    background-image:url(https://img.icons8.com/ios/50/000000/unchecked-checkbox.png);
+    height: 18px;
+    width:18px;
+    top:8px;
+    border-radius:50%;
+    background-size:cover;
+    background-position:center;
+    left: -30px; /* Adjust the distance between the list image and the list element */
+    
+    
+  }
+  ul li.cross{
+    color:#555;
+    text-decoration: line-through;
+    
+  }
+  ul li.cross::before{
+    background-image:url(https://img.icons8.com/stickers/100/checked-2.png);
+    height: 24px;
+    width:22px;
+    margin-top:-3px;
+    border-radius:50%;
+    background-size:cover;
+    background-position:center;
+   
+  }
+  ul li span{
+    position:absolute;
+    right:5px;
+    
+    padding: 6px 10px;
+    border-radius:50%;
+    
+    
+  }
+  ul li span:hover{
+    background:#edeef0;
+  
+    
+  }
+    
